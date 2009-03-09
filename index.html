@@ -1,0 +1,894 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD>
+<META NAME="GENERATOR" CONTENT="Vim 6.0">
+<TITLE>jamwt {Py-TOC}</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<TABLE BORDER=0 ALIGN=CENTER WIDTH="95%" CELLPADDING=0 CELLSPACING=0>
+<TR><TD ALIGN=LEFT><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/general/jamwt_simple.gif"></TD>
+<TD ALIGN=RIGHT VALIGN=BOTTOM NOWRAP>
+<IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/tri.gif">
+<A HREF="/index.html#projects"><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/general/proj_lab.gif"></A>
+<IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/tri.gif">
+<A HREF="/index.html#hosting"><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/general/host_lab.gif"></A>
+<IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/tri.gif">
+<A HREF="/index.html#misc"><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/general/misc_lab.gif"></A>
+<IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/tri.gif">
+<A HREF="/index.html#contact"><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/general/cont_lab.gif"></A>
+<IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/tri.gif"></TD>
+</TR>
+<TR><TD BGCOLOR="#434D7D" HEIGHT=2 COLSPAN=2><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/4h.gif"></TD></TR>
+<TR><TD COLSPAN=2>
+<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=0 BORDER=0>
+<TR><TD WIDTH="13%" BGCOLOR="#434D7D" ALIGN="CENTER">
+<B><A HREF="index.html#intro"><FONT COLOR="#FFFFFF" SIZE=2>Introduction</FONT></A></B>
+</TD>
+<TD WIDTH="9%"><FONT COLOR="#FFFFFF" SIZE=2>&nbsp;</TD>
+<TD WIDTH="13%" BGCOLOR="#434D7D" ALIGN="CENTER">
+<B><A HREF="index.html#download"><FONT COLOR="#FFFFFF" SIZE=2>Download</FONT></A></B>
+</TD>
+<TD WIDTH="9%"><FONT COLOR="#FFFFFF" SIZE=2>&nbsp;</TD>
+<TD WIDTH="13%" BGCOLOR="#434D7D" ALIGN="CENTER">
+<B><A HREF="index.html#doc"><FONT COLOR="#FFFFFF" SIZE=2>Documentation</FONT></A></B>
+</TD>
+<TD WIDTH="9%"><FONT COLOR="#FFFFFF" SIZE=2>&nbsp;</TD>
+<TD WIDTH="13%" BGCOLOR="#434D7D" ALIGN="CENTER">
+<B><A HREF="index.html#examples"><FONT COLOR="#FFFFFF" SIZE=2>Examples</FONT></A></B>
+</TD>
+<TD WIDTH="8%"><FONT COLOR="#FFFFFF" SIZE=2>&nbsp;</TD>
+<TD WIDTH="13%" BGCOLOR="#434D7D" ALIGN="CENTER">
+<B><A HREF="index.html#thanks"><FONT COLOR="#FFFFFF" SIZE=2>Thanks</FONT></A></B>
+</TD>
+</TR></TABLE>
+</TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP COLSPAN=2><BR>
+
+<A NAME="intro"></A>
+<P><FONT SIZE=4 COLOR="#434D7D">Py-TOC</FONT><BR>
+<!--lil'line-->
+<TABLE ALIGN=LEFT WIDTH=200 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR><TD BGCOLOR="#999999" HEIGHT=2 COLSPAN=2><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/4h.gif"></TD></TR></TABLE>
+<!--/lil'line-->
+</P>
+
+<P>Py-TOC is a Python module that allows you to design and program automated 
+entities--often referred to as "bots"--that participate on the AOL Instant 
+Messenger network.  It allows you to utilize the incredible power of the 
+Python language and library when writing scripts that interact with users
+of AOL Instant Messenger and its free equivalents.
+</P>
+<P>Attention was taken to ensure that the details of the TOC 
+layer (the protocol unofficial AOL clients typically use) is sufficiently abstracted
+from the implementer.  This was accomplished by using OOP
+and Python classes.  This also lowers the bar when it comes time to
+write your systems; through inheritance, you need only to add code 
+that provides the particular handling and processing
+your bot requires.  A further explanation of this is provided in 
+<A HREF="index.html#doc">the documentation</A>, and working examples 
+<A HREF="index.html#examples">are available as well.</A></P>
+<P>The module was written by <A HREF="mailto:jamwt@jamwt.com">Jamie Turner</A>.
+Please direct all bugs, documentation errors, questions, suggestions, etc, 
+to him.  If you'd like to contribute an example script, he'd be happy to
+have it.  Furthermore, if you implement Py-TOC in some useful, clever way, 
+he would be thrilled to hear the details of your success.
+</P>
+<P><A HREF="LICENSE">The license is BSD-style.</A></P>
+
+<A NAME="download"></A>
+<P><FONT SIZE=4 COLOR="#434D7D">Download</FONT><BR>
+<!--lil'line-->
+<TABLE ALIGN=LEFT WIDTH=200 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR><TD BGCOLOR="#999999" HEIGHT=2 COLSPAN=2><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/4h.gif"></TD></TR></TABLE>
+<!--/lil'line-->
+</P>
+<P><A HREF="2.5/toc.py">Latest version of toc.py is version 2.4</A>  
+<P>Changes from 2.4: Updated for TOC2 by Andrew Herron and
+Moss Collum.
+</P>
+
+<P>BotManager, a class for TOC reconnects, bot multi-threading,
+and single script multi-bot implementations,
+was added in 2.0.  See <A HREF="index.html#walk">the updated walkthrough</A>, 
+<A HREF="index.html#examples">the new examples</A>,
+and <A HREF="index.html#reference">the reference</A> to start 
+learning to use BotManager.</P>
+<P>2.X <I>is</I> fully backwards-compatible with 1.X.  All your
+existing bots should work.</P>
+<A HREF="http://www.python.org">Python 2.X</A> is <B>required</B>
+by Py-TOC.
+Please see the documentation below for installation instructions.
+</P>
+<P><A HREF="http://freshmeat.net/branches/28603/">Freshmeat</A> is
+probably the best place to get a sense of a project "changelog."
+</P>
+<A NAME="doc"></A>
+<P><FONT SIZE=4 COLOR="#434D7D">Documentation</FONT><BR>
+<!--lil'line-->
+<TABLE ALIGN=LEFT WIDTH=200 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR><TD BGCOLOR="#999999" HEIGHT=2 COLSPAN=2><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/4h.gif"></TD></TR></TABLE>
+<!--/lil'line-->
+</P>
+<P>
+<FONT SIZE=2><A HREF="index.html#install">(Installing)</A>&nbsp;&nbsp;
+<A HREF="index.html#walk">(Walkthrough)</A>&nbsp;&nbsp;
+<A HREF="index.html#FAQ">(FAQ)</A>&nbsp;&nbsp;
+<A HREF="index.html#reference">(Reference)</A></FONT>
+</P>
+<P>
+<A NAME="install">
+<H3>Installing</H3>
+</P>
+<P>To install Py-TOC, simply copy toc.py into some location in your PYTHONPATH.  
+The proper place is usually </P>
+<P><I>/usr/local/lib/python(version)/site-packages/</I>
+</P>
+<P>Replace (version) with your version number of Python, such as 2.2.
+To test your installation, change directory to your $HOME and:
+</P>
+<P>
+<PRE>
+$ python
+&gt; import toc
+&gt;
+</PRE></P>
+<P>If toc is imported without error, your installation was successful.</P>
+<P>
+<A NAME="walk">
+<H3>Walkthrough</H3>
+</P>
+<P>In order to make a bot, first you must import the TocTalk class from the toc module.  This
+will be the basis of your bot class.</P>
+<P><PRE>from toc import TocTalk</PRE></P>
+<P>Creating a subclass that inherits the attributes of TocTalk is our next step:</P>
+<P><PRE>from toc import TocTalk
+
+class MyBot(TocTalk):
+	# put something useful here later
+</PRE></P>
+<P>To create functionality for your bot, you need to implement <I>event handler functions</I> and
+use <I>action functions</I>.</P>
+<P>Handler functions are how you receive events from other Instant Messenger users, such as an IM, 
+chat message, or user profile.  Adding to our example from above, we can show a common handle to add:</P>
+<P><PRE>from toc import TocTalk
+
+class MyBot(TocTalk):
+	#whenever someone IMs us
+	def on_IM_IN(self,data):
+		print "We've been messaged."
+</PRE></P>
+<P>Believe it or not, this is a complete, albeit simple, bot. 
+Every time someone IMed the bot above, it would print "We've been messaged." to STDOUT.</P>
+<P>In order to do something more useful than this, we need to be able to both receive events
+and trigger our own.  This is where <I>action functions</I> come in.  MyBot, by inheriting TocTalk's
+methods and attributes, has a number of action functions that allow us to communicate 
+with other users.</P>
+<P>Here is something slightly more complex:</P>
+<P><PRE>-- start testbot.py --
+
+from toc import TocTalk
+
+class MyBot(TocTalk):
+	#whenever someone IMs us
+	def on_IM_IN(self,data):
+		# data contains "screenname:flag:message", such as
+		# "jamwt:F:hey, ben.. how's work?"
+		data_components = data.split(":",2) #maxsplit for handling 
+		                                    #in-message colons                                    
+
+		screenname = data_components[0]  # the sender's screenname
+		message = data_components[2]     # in case the sender 
+		                                        # used a colon in their 
+		                                        # message
+
+		# TocTalk also includes a special helper function called
+		# strip_html().  Many AIM clients like Windows AIM use HTML
+		# code.  strip_html() will remove HTML tags and make it text
+		message = self.strip_html(message)
+
+		# now we use our first action function...
+		# let's just repeat back to the person what
+		# they said to us
+		self.do_SEND_IM(screenname, "Echo!  You said: " + message )
+		
+# if this file is run directly
+if __name__ == "__main__":
+	
+	# create the bot, specify some AIM account to use
+	bot = MyBot("IMscreenname","password")
+	bot.go()
+
+-- end testbot.py --
+</PRE></P>
+<P>This is still a relatively simple example, but it demonstrates all of the 
+key principles behind making bots with Py-TOC.  In just a few lines, you can
+have a working bot.</P>
+<P>The next step is to employ use of the BotManager class.  We can use
+the BotManager class to create and manage multiple bots, and to have
+multiple threads of execution.</P>
+<P>In this basic example, we'll use BotManager to have two threads
+of execution.</P>
+<P><PRE>
+-- start TickBot.py --
+########################################################
+#
+#        File: TickBot.py
+#        Author: Jamie Turner &lt;jamwt@jamwt.com&gt;
+#        Date: 4/24/02
+#
+#        Description:
+#
+#        Demonstrates one bot, two threads of execution 
+#        using the BotManager class
+#
+#        Anyone who IMs it will get a friendly "tick" IM
+#        every 60 seconds.
+#
+
+sn1 = "IMscreenname"
+pass1 = "password"
+
+from toc import TocTalk,BotManager
+
+import time
+
+
+wantticks = []
+
+class TickBot(TocTalk):
+
+	def on_IM_IN(self,data):
+		global wantticks
+		# get the screenname to IM back--
+		# we don't care about the message
+		# in this case!
+		screenname = data.split(":")[0]
+
+		if not screenname in wantticks:
+			wantticks.append(screenname)
+
+		# send them the appropriate message
+		self.do_SEND_IM(screenname, 
+'''Ok, you're gonna get "ticked" every 60 seconds.''')
+
+if __name__ == "__main__":
+	
+	bot = TickBot(sn1, pass1)
+	bot._info = "IM me:  I'll tick you off (the minutes)."
+
+	bm = BotManager()
+	bm.addBot(bot,"myBot") # start it up
+
+	while 1:
+		time.sleep(60)
+		for i in wantticks:
+			bot.do_SEND_IM(i,
+'''&lt;I&gt;**TICK!**&lt;/I&gt;  It's been 60 seconds.  Did you miss me?''')
+
+-- end TickBot.py --
+</PRE></P>
+<P>Want more?  <A HREF="index.html#examples">Check out the examples</A>
+</P>
+<A NAME="FAQ">
+<P><H3>FAQ</H3></P>
+<P><I>1. Does it run on MS Windows?</I></P>
+<P>Yes.  I've tested it on XP.  I've had reports that it works
+on 2000, NT 4.0, and ME.  I'm not sure about 95/98,
+but I would imagine it would work there as well.</P>
+<P><I>2. How do I execute something right after the bot logs in?  Once
+I execute (bot).go(), it never returns...</I></P>
+<P>go() calls a special function called start().  TocTalk's start()
+method is blank.  Just implement a 'def start(self):' method in 
+your bot class, and it
+will be executed immediately after the bot logs in.
+</P>
+<P><I>3. TocTalk sets my user information (as seen in the bot's "profile")
+upon connection.  How do I have it use my own message instead?</I></P>
+<P>
+Before you call (bot).go(), 
+set (bot)._info = "your information here".</P>
+<P><I>4. I need to know more details about the I/O; or, I don't want
+the TocTalk class to output anything at all!!</I></P>
+<P>
+(bot)._debug can be set to [0..2].  The default is one.  Before you
+call (bot).go(), set (bot)._debug = &lt;some int&gt;.  Higher numbers yield
+more verbose output.</P>
+<P><I>5. I want output from the TocTalk class, but not to STDOUT.  
+How can I redirect that output for logging?</I></P>
+<P>Before you call (bot).go(), set (bot)._logfd to any file descriptor
+with a .write() method.</P>
+<P>Here's an example using all options mentioned in questions 3-5:
+<PRE>
+mybot = SomeBot("username","password")
+
+# Set the "profile" information
+mybot._info  = "Hi, I'm SomeBot.  Message me to learn more."
+
+# be verbose in bot I/O
+mybot._debug = 2
+
+# log to log.txt
+# 3rd argument here makes the output unbuffered, so lines are written
+# to file immediately as events happen, and '$ tail -f &lt;file&gt;
+# gives some useful output
+mybot._logfd  = open("log.txt","a",0)
+
+# kick it off...
+mybot.go()
+</PRE></P>
+<P><I>6. I don't care about events, or responding.  How do I just get the
+capability to IM people?</I></P>
+<P>Do this:
+<PRE>
+from toc import TocTalk, BotManager
+import time
+
+bm = BotManager()
+bot = TocTalk("screenname","password")
+
+#bot._debug = 0     # uncomment if you want NO output
+bm.addBot(bot,"bot")
+time.sleep(4)  # time to login
+
+# now you're ready to go.  Do this as many times as you want,
+# to whoever you want. 
+bot.do_SEND_IM("dest_screenname","Message goes here")
+</PRE></P>
+<P><I>7. When I use a screenname with a lot of buddies, I don't receive
+UPDATE_BUDDY events for any of them.  Why?</I></P>
+<P>
+UPDATE_BUDDY informs you of actions taken by entities on your buddy
+list.  However, in TOC you technically don't *have* a buddy
+list until you call toc_add_buddy for each buddy you wish to receive
+notifications for.
+</P>
+
+<P>
+This means that the CONFIG data sent to you by the server
+is just your "saved settings," to refresh your memory when it's time to
+add_buddy.  
+</P>
+
+<P>
+TOC allows more flexibility this way; you're in a neutral state to
+start.  Perhaps you only want notifications from a few specific people
+this session, not everyone in your config.
+</P>
+
+<P>
+The key is to add_buddy for each
+member in your saved config.  Then you'll receive update_buddy
+notifications for each.
+</P>
+<P>Here's some sample code that demonstrates this:</P>
+<P>
+<PRE>
+from toc import TocTalk
+import time
+
+cfgset = 0
+class MyBot(TocTalk):
+	def on_UPDATE_BUDDY(self,data):
+		print data # this will work for each buddy in your config
+
+	def on_CONFIG(self,data):
+		global cfgset
+
+		# first time logging in--add buddies from config...
+		if not cfgset:
+			cfgset = 1
+
+			buds = []
+
+			# remember the format of config data here:
+			# "m 1\ng Buddies\nb bouncebot\nb perlaim\n"
+			for item in data.split("\n"):
+				if item == '':
+					continue
+				if item[0] == "b":
+					buds.append(item[1:].strip())
+
+				#add no more than ~20 at a time, msg len restrictions
+				if len(buds) == 20:
+					self.do_ADD_BUDDY(buds)
+					time.sleep(0.2) # don't SLAM the server...
+					buds = []
+
+			if len(buds):
+				self.do_ADD_BUDDY(buds)
+					
+
+if __name__ == "__main__":
+	bot = MyBot("screenname", "password")
+	bot.go()
+
+</PRE></P>
+
+
+
+<P>
+<A NAME="reference">
+<H3>Reference</H3>
+</P>
+<P>
+<B>BotManager</B>
+</P>
+<P><PRE>BotManager()</PRE>
+Create a new instance of the BotManager class.</P>
+<P><I>BotManager methods</I></P>
+<UL>
+<LI><P><PRE>addBot(bot,botref,go=1,reconnect=1,delay=30)</PRE>
+Add a bot to the bot manager.</P>
+
+   <P><FONT FACE="courier">bot</FONT>: <I>(TocTalk or derived instance)</I> 
+   The bot object you would like to add.</P>
+
+   <P><FONT FACE="courier">botref</FONT>: <I>(string)</I> 
+   A label for the bot, used to refer to it in further calls.</P>
+
+   <P><FONT FACE="courier">go</FONT>: <I>(int)</I> 
+   Start the bot now, or wait?  Default is to start.</P>
+
+   <P><FONT FACE="courier">reconnect</FONT>: <I>(int)</I> 
+   Non-zero value indicates that the BotManager should try to
+   reconnect the bot to the TOC server if it is disconnected.
+   Default is non-zero.</P>
+
+   <P><FONT FACE="courier">delay</FONT>: <I>(int)</I> 
+   How long should the BotManager wait before trying to reconnect, in seconds.
+   We shouldn't slam AOL *too* hard.  Default is 30.</P>
+   
+<LI><P><PRE>botGo(botref)</PRE>
+Start up an added, but not started, bot.</P>
+
+   <P><FONT FACE="courier">botref</FONT>: <I>(string)</I> 
+   The label you gave to the bot when you added it.</P>
+
+<LI><P><PRE>botStop(botref)</PRE>
+Make the bot sign off.</P>
+
+   <P><FONT FACE="courier">botref</FONT>: <I>(string)</I> 
+   The label you gave to the bot when you added it.</P>
+
+
+<LI><P><PRE>botPause(botref,val=1)</PRE>
+Make the bot pause/unpause. A paused bot stays online, but
+does not respond to events until unpaused.</P>
+
+   <P><FONT FACE="courier">botref</FONT>: <I>(string)</I> 
+   The label you gave to the bot when you added it.</P>
+
+   <P><FONT FACE="courier">botref</FONT>: <I>(val)</I> 
+   Non-zero pauses the bot, zero unpauses.  Default is non-zero.</P>
+
+<LI><P><PRE>getBot(self,botref)</PRE>
+Returns the bot object you passed to addBot.</P>
+
+   <P><FONT FACE="courier">botref</FONT>: <I>(string)</I> 
+   The label you gave to the bot when you added it.</P>
+		
+<LI><P><PRE>wait()</PRE>
+Give up the main thread of execution.  Usually called after multiple bots 
+are started and the programmer only desires event-based processing.</P>
+</UL>
+<P>
+<B>TocTalk</B>
+</P>
+<P><PRE>TocTalk(nick,passwd)</PRE>
+Create a new instance of the TocTalk class.</P>
+<P><FONT FACE="courier">nick</FONT>: <I>(string)</I> The nickname of the AOL
+Instant Messenger account you would like to use.</P>
+<P><FONT FACE="courier">passwd</FONT>: <I>(string)</I> Password corresponding
+to this account</P>
+
+<P><I>Event Handler Functions</I></P>
+<P>All of the following has been adapted from the AOL TOC 1.0 specification,
+as found in the PROTOCOL document distributed with TiK.</P>
+<UL>
+<LI><P><PRE>on_IM_IN(self,data)</PRE>
+   Receive an IM from some one.  </P>
+   
+   <P><I>Format of</I> <FONT FACE="courier">data</FONT> :
+   Colon delimited set of three values.  The first is the 
+   username of the sender.  The second , either a T or an F,
+   indicates whether the message was sent as an auto-response.
+   The third and final field is the message body itself.</P>
+   <P>A example would be <FONT FACE="courier">"jamwt:F:foo and bar are so alike."</FONT></p>
+   <P>Take special note that 
+   <PRE>message=data.split(":")[2]</PRE> is not
+   valid, because the message may contain colons.  You need to use the 
+   optional maxsplit argument.
+	<PRE>message=data.split(":",2)[2]</PRE> 
+	would be correct.</P>
+<LI><P><PRE>on_CONFIG(self,data)</PRE>
+   Incoming user configuration. 
+   Config can be empty in which case the host was not able to
+   retrieve it, or a config didn't exist for the user.</P> 
+   
+   <P><I>Format of</I> <FONT FACE="courier">data</FONT> :
+   The config information
+    is a string containing a series of lines with the first 
+	character in each being the item type,
+    followed by a space, with the rest of the line being the item
+    value.  Only letters, numbers, and spaces should be used.
+	</P>
+	<P>Item types are:</P>
+	<P><UL TYPE=SQUARE>
+	<LI><FONT FACE="courier">g</FONT> - Buddy Group (All Buddies until the next g or the end of config 
+		     are in this group.)
+    <LI><FONT FACE="courier">b</FONT> - A Buddy 
+	<LI><FONT FACE="courier">p</FONT> - Person on permit list
+    <LI><FONT FACE="courier">d</FONT> - Person on deny list
+    <LI><FONT FACE="courier">m</FONT> - Permit/Deny Mode.  Possible values are:
+	<UL TYPE="CIRCLE">
+	<LI><FONT FACE="courier">1</FONT> - Permit All
+	<LI><FONT FACE="courier">2</FONT> - Deny All
+	<LI><FONT FACE="courier">3</FONT> - Permit Some
+	<LI><FONT FACE="courier">4</FONT> - Deny Some
+	</UL>
+	</UL>
+	</P>
+   <P>A example would be <FONT FACE="courier">"m 1\ng Buddies\nb bouncebot\nb perlaim\n"</FONT></p>
+
+<LI><P><PRE>on_UPDATE_BUDDY(self,data)</PRE>
+   This command handles arrivals, departures, and updates of members on your
+   bots buddy list.</P>
+   
+   <P><I>Format of</I> <FONT FACE="courier">data</FONT> :
+   Colon delimited; first is screenname, then T/F for online status, warning percentage,
+   time of sign-on in Unix epoc format, idle time in minutes, and finally a "User Class" 
+   string of 2 or three characters:</P>
+   <P><UL TYPE=SQUARE>
+   <LI>First Character:
+   <UL TYPE=CIRCLE>
+   <LI><FONT FACE=COURIER>' '</FONT> - Ignore
+   <LI><FONT FACE=COURIER>'A'</FONT>  - On AOL
+   </UL>
+   <LI>Second Character:
+   <UL TYPE=CIRCLE>
+   <LI><FONT FACE=COURIER>' '</FONT>  - Ignore
+   <LI><FONT FACE=COURIER>'A'</FONT>  - Oscar Admin
+   <LI><FONT FACE=COURIER>'U'</FONT>  - Oscar Unconfirmed
+   <LI><FONT FACE=COURIER>'O'</FONT>  - Oscar Normal
+   </UL>
+   <LI>Third Character:
+   <UL TYPE=CIRCLE>
+   <LI><FONT FACE=COURIER>'\0'</FONT> - Ignore
+   <LI><FONT FACE=COURIER>' '</FONT>  - Ignore
+   <LI><FONT FACE=COURIER>'U'</FONT>  - The user has set their unavailable flag.
+   </UL>
+   </UL>
+   </P>
+
+<LI><P><PRE>on_ERROR(self,data)</PRE>
+   Triggered upon an error condition.</P>
+   <P><I>Format of</I> <FONT FACE="courier">data</FONT> :
+   Colon delimited.  First field is an error code.  Second is
+   an optional argument that pertains to the error.</P>
+   <P>Error codes are as follows:</P>
+   <P><UL TYPE=SQUARE>
+   <LI>General Errors:
+   <UL TYPE=CIRCLE>
+   <LI><FONT FACE=COURIER>901</FONT> - <i>argument</i> not currently available
+   <LI><FONT FACE=COURIER>902</FONT>   - Warning of <i>argument</i> not currently available
+   <LI><FONT FACE=COURIER>903</FONT>   - A message has been dropped, you are exceeding
+	   the server speed limit
+   </UL>
+   <LI>Chat Errors
+   <UL TYPE=CIRCLE>
+   <LI><FONT FACE=COURIER>950</FONT>   - Chat in <i>argument</i> is unavailable.
+   </UL>
+
+   <LI>IM &amp; Info Errors
+   <UL TYPE=CIRCLE>
+   <LI><FONT FACE=COURIER>960</FONT>   - You are sending message too fast to <i>argument</i>
+   <LI><FONT FACE=COURIER>961</FONT>   - You missed an im from <i>argument</i> because it was too big.
+   <LI><FONT FACE=COURIER>962</FONT>   - You missed an im from <i>argument</i> because it was sent too fast.
+   </UL>
+
+   <LI>Dir Errors
+   <UL TYPE=CIRCLE>
+   <LI><FONT FACE=COURIER>970</FONT>   - Failure
+   <LI><FONT FACE=COURIER>971</FONT>   - Too many matches
+   <LI><FONT FACE=COURIER>972</FONT>   - Need more qualifiers
+   <LI><FONT FACE=COURIER>973</FONT>   - Dir service temporarily unavailable
+   <LI><FONT FACE=COURIER>974</FONT>   - Email lookup restricted
+   <LI><FONT FACE=COURIER>975</FONT>   - Keyword Ignored
+   <LI><FONT FACE=COURIER>976</FONT>   - No Keywords
+   <LI><FONT FACE=COURIER>977</FONT>   - Language not supported
+   <LI><FONT FACE=COURIER>978</FONT>   - Country not supported
+   <LI><FONT FACE=COURIER>979</FONT>   - Failure unknown <i>argument</i>
+   </UL>
+
+   <LI>Auth errors
+   <UL TYPE=CIRCLE>
+   <LI><FONT FACE=COURIER>980</FONT>   - Incorrect nickname or password.
+   <LI><FONT FACE=COURIER>981</FONT>   - The service is temporarily unavailable.
+   <LI><FONT FACE=COURIER>982</FONT>   - Your warning level is currently too high to sign on.
+   <LI><FONT FACE=COURIER>983</FONT>   - You have been connecting and
+	   disconnecting too frequently.  Wait 10 minutes and try again.
+	   If you continue to try, you will need to wait even longer.
+   <LI><FONT FACE=COURIER>989</FONT>   - An unknown signon error has occurred <i>argument</i>
+   </UL>
+   </UL>
+   </P>
+   <P>Please Note: The TocTalk class handles Authentication errors by default.  If you 
+   implement an event handler function for ERROR, you will potentially
+   catch all codes except 980-989.</P>
+
+
+<LI><P><PRE>on_EVILED(self,data)</PRE>
+Triggered when you have been warned by someone.</P>
+
+   <P><I>Format of</I> <FONT FACE="courier">data</FONT> :
+Colon delimited, 2 fields.  First field is new warn percentage, 
+second field is the name of the person who warned you, or blank
+if anonymous warn.  Example: <FONT FACE="courier">"45:jamwt"</FONT></P>
+
+<LI><P><PRE>on_CHAT_JOIN(self,data)</PRE>
+We were able to join a chat room previously requested.</P>
+
+   <P><I>Format of</I> <FONT FACE="courier">data</FONT> :
+Colon delimited, 2 fields.  Chat room ID, then chat room name.</P>
+
+<LI><P><PRE>on_CHAT_IN(self,data)</PRE>
+A chat message was triggered in a chat room.</P>
+
+   <P><I>Format of</I> <FONT FACE="courier">data</FONT> :
+Four fields.  Chat room ID, messaging nickname, Whisper value
+(T/F), and message.  Example: 
+<FONT FACE="courier">"98722582:jamwt:F:Hey all!"</FONT></P>
+<P>Whisper value indicates whether the message was spoken 
+only to you, or was broadcast to all members in the chat room.</P>
+<P>The same catch from SEND_IM messages applies here: Messages may
+contain a colon.  Parse accordingly.</P>
+
+<LI><P><PRE>on_CHAT_UPDATE_BUDDY(self,data)</PRE>
+Arrivals and departures from a chat room.  Upon first 
+entering a chat room, this event will be triggered
+with all users currently in the room.</P>
+
+   <P><I>Format of</I> <FONT FACE="courier">data</FONT> :
+   Colon delimited, 3 or more fields.  The first field is
+   the chat room ID.  Second field is (T/F), true indicating 
+   the user(s) are now in the room, and vice versa.  
+   <FONT FACE="courier">data</FONT> will contain one or more
+   fields after these, each being a username to which the previous two
+   parameters apply. Example: 
+   <FONT FACE="courier">"7262909:F:jamwt:SimpBot"</FONT></P>
+
+<LI><P><PRE>on_CHAT_INVITE(self,data)</PRE>
+Bot is being invited to a chat room.</P>
+
+   <P><I>Format of</I> <FONT FACE="courier">data</FONT> :
+   Four fields: Chat room name, chat room id, screenname of 
+   inviting user, message accompanying invitation.  Example:
+   <FONT FACE="courier">"Py-TOC Talk:1123223:jamwt:Best chat in town."</FONT>
+   </P>
+   <P>The message may contain colons.</P>
+
+<LI><P><PRE>on_CHAT_LEFT(self,data)</PRE>
+Chat room has been closed.</P>
+
+   <P><I>Format of</I> <FONT FACE="courier">data</FONT> :
+Chat room ID.</P>
+
+<LI><P><PRE>on_GOTO_URL(self,data)</PRE>
+Event requesting the client to make an HTTP request to some URL.
+This is usually in response to a request for user information.</P>
+
+   <P><I>Format of</I> <FONT FACE="courier">data</FONT> :
+Colon delimited, two fields.  First field is Window Name--a suggested internal name 
+for the window to use.  Second field is the URL.  Note: This almost certainly
+*will* contain colons.</P>
+</UL>
+
+<P><I>Action Functions</I></P>
+<UL>
+<LI><P><PRE>self.do_SEND_IM(user,message,autoaway=0)</PRE>
+   Sends an IM to some user. </P>
+   
+   <P><FONT FACE="courier">user</FONT>: <I>(string)</I> The screenname of the user you would
+   like to message.</P>
+
+   <P><FONT FACE="courier">message</FONT>: <I>(string)</I> The message you would like to send.</P>
+
+   <P><FONT FACE="courier">autoaway</FONT>: <I>(int)</I> 
+   Non-zero value indicates that the message is an autoresponse.  
+   Default is 0.</P>
+
+<LI><P><PRE>self.do_ADD_BUDDY(buddies)</PRE>
+   Add a buddy to your buddy list.  Note:  This is only effective for current session.
+   You need to do_SET_CONFIG() if you want to make permanent alterations.</P>
+   
+   <P><FONT FACE="courier">buddies</FONT>: <I>(list)</I> Contains all the buddies you would
+   like to add.</P>
+
+
+<LI><P><PRE>self.do_ADD_PERMIT(buddies)</PRE>
+   Un-block user(s) so that he or she can see your online status. Note:  This is only effective for current session.
+   You need to do_SET_CONFIG() if you want to make permanent alterations.</P>
+   
+   <P><FONT FACE="courier">buddies</FONT>: <I>(list)</I> Contains all the buddies you would
+   like to permit to be notified of your presence.</P>
+
+<LI><P><PRE>self.do_ADD_DENY(buddies)</PRE>
+   Block user(s) so that he or she cannot see your online status. Note:  This is only effective for current session.
+   You need to do_SET_CONFIG() if you want to make permanent alterations.</P>
+   
+   <P><FONT FACE="courier">buddies</FONT>: <I>(list)</I> Contains all the buddies you would
+   like to block.</P>
+
+<LI><P><PRE>self.do_REMOVE_BUDDY(buddies)</PRE>
+   Remove buddies from your buddy list. Note:  This is only effective for current session.
+   You need to do_SET_CONFIG() if you want to make permanent alterations.</P>
+   
+   <P><FONT FACE="courier">buddies</FONT>: <I>(list)</I> Contains all the buddies you would
+   like to remove.</P>
+
+<LI><P><PRE>self.do_SET_IDLE(itime)</PRE>
+	Set your idle time.  It is the client's responsibility to do this.  The TOC spec asks
+	that you only notify once of idle time, and the TOC server will count up from there.</P>
+   
+   <P><FONT FACE="courier">itime</FONT>: <I>(int)</I> Idle time in seconds.</P>
+
+<LI><P><PRE>self.do_SET_AWAY(awaymess)</PRE>
+	Mark yourself away.</P>
+   
+   <P><FONT FACE="courier">awaymess</FONT>: <I>(string)</I> Away message.  Use "" to 
+   remove away status.</P>
+
+<LI><P><PRE>self.do_SET_CONFIG(configstr)</PRE>
+	Save some configuration of buddies, permit/deny lists, to the TOC system.</P>
+   
+   <P><FONT FACE="courier">configstr</FONT>: <I>(string)</I>
+   A string with the format as specified by the on_CONFIG event documentation previously
+   listed on this page.</P>
+
+<LI><P><PRE>self.do_GET_INFO(user)</PRE>
+	Request information for another user.  Expect a GOTO_URL event
+	in return.  An HTTP request to the URL should return HTML formatted information
+	about the user.</P>
+   
+   <P><FONT FACE="courier">user</FONT>: <I>(string)</I>
+   The screenname of the user whose information you would like to retrieve.</P>
+
+<LI><P><PRE>self.do_SET_INFO(info)</PRE>
+	Set your user information.</P>
+   
+   <P><FONT FACE="courier">info</FONT>: <I>(string)</I>
+   Plain-text or HTML string for Get Member Info... requests.</P>
+
+<LI><P><PRE>self.do_EVIL(user,anon=0)</PRE>
+	Warn a buddy.</P>
+   
+   <P><FONT FACE="courier">user</FONT>: <I>(string)</I>
+   Screenname of the buddy you would like to warn.</P>
+
+   <P><FONT FACE="courier">anon</FONT>: <I>(int)</I>
+   Optional argument: pass 1 to warn anonymously.  Anonymous
+   warning does not affect the user as greatly as id'd warning would.</P>
+<LI><P><I>Chat functions implemented as well.  Use the source, Luke.</I></P>
+</UL>
+
+<A NAME="examples"></A>
+<P><FONT SIZE=4 COLOR="#434D7D">Examples</FONT><BR>
+<!--lil'line-->
+<TABLE ALIGN=LEFT WIDTH=200 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR><TD BGCOLOR="#999999" HEIGHT=2 COLSPAN=2><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/4h.gif"></TD></TR></TABLE>
+<!--/lil'line-->
+</P>
+<P><B><A HREF="samples/claim.py">CLAIM</A></B></P>
+<P>
+CLAIM is a command-line instant messenging client.  It handles 
+buddy lists, a hotlist, and warnings.  It is not intended to 
+be a comprehensive client: it won't set your idle time, it
+doesn't handle away messages, you can't alter your buddy list,
+etc.  But it works very well to chat with your buddies using an
+account you've already set up.
+</P>
+<p>Check out the docstrings at the top of the python file for
+instructions.</p>
+&nbsp;<br>
+&nbsp;<br>
+
+<P>In addition to CLAIM and the basic examples <A HREF="index.html#walk">found in the
+walk-through</A>, a few simple bots are provided here.  The easiest way to see 
+how each works is just to run them! All you need
+is some AIM account(s), Python, and Py-TOC.</I>
+
+<P>If you want to see a more sophisticated implementation of Py-TOC, add
+'SimpBot' to your buddy list.  Talk to it about The Simpsons.</P>
+
+</P>
+<P><B><A HREF="samples/NewSNBot.py">NewSNBot</A></B>
+<BR><I><A HREF="mailto:dylant@ucla.edu">Contributed by Dylan Thomas</A></I></P>
+<P>
+This is a screenname change bot.  When you change your screenname,
+let this bot help get the word out.
+</P>
+<P>
+Run this bot with your old screenname
+and password, and whenever someone IMs
+your old name, it will tell them about
+about your new one.
+</P>
+<P><B><A HREF="samples/ProxyBot.py">ProxyBot</A></B>
+<P>
+A bot that you can use as a proxy to send/recieve messages.
+See the comments at the top of the file for instructions.
+</P>
+<P><B><A HREF="samples/AwayBot.py">AwayBot</A></B></P>
+<P>
+Weird little bot that sets its away message
+according to viewers incoming IMs.
+</P>
+<P><B><A HREF="samples/SDBot.py">Self-Defense Bot</A></B></P>
+<P>
+Self-Defense bot.  When you message it,
+it just bounces back a reminder not to
+warn it.  
+When someone warns it, it quickly 
+tries to warn them three times--
+taking a 2 second break between each
+as not to violate speed rules.
+It then blocks them so that they cannot
+converse with it/warn it additionally.
+</P>
+
+<P><B><A HREF="samples/googlebot.py">GoogleBot</A></B>
+<BR><I>Contributed by Matthew King</I></P>
+<P>
+GoogleBot will perform Google searches using 
+<a href="http://diveintomark.org/projects/#pygoogle">PyGoogle</a>. 
+You need an official Google license key to run this one.
+</a>
+
+<P><B><A HREF="samples/RelayBots.py">Relay Bots</A></B></P>
+<P>Demonstrates using BotManager for script-side data sharing between
+two bots.  Say things to one bot and another will echo them 
+back to you.</P>
+
+<P><B><A HREF="samples/BattleBots.py">Battle Bots</A></B></P>
+<P>Two bots are launched using BotManager, and they duke it out
+in a demented automated warning-war.</P>
+<P><B>Don't</B> use your primary screenname for either of these
+bots.  The warning percentages will get very high.</P>
+
+
+
+<A NAME="thanks"></A>
+<P><FONT SIZE=4 COLOR="#434D7D">Thanks</FONT><BR>
+<!--lil'line-->
+<TABLE ALIGN=LEFT WIDTH=200 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR><TD BGCOLOR="#999999" HEIGHT=2 COLSPAN=2><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/4h.gif"></TD></TR></TABLE>
+<!--/lil'line-->
+</P>
+
+<P><A HREF="http://aspn.activestate.com/ASPN/CodeDoc/Net-AIM/AIM.html">Net::AIM</A>
+ by <A HREF="mailto:perlaim@aryeh.net">Aryeh Goldsmith</A> was an excellent reference
+ to better understand the protocol.  Some sections of toc.py are adapted
+ from his code.</A></P>
+<P>Thanks to AOL for drafting the <A HREF="PROTOCOL">TOC protocol document</A>
+and making it GPL
+so that unofficial clients could participate.</P>
+<P>To Kenytt Avery for suggesting modifying the _logfd example to use the
+third argument of open() to set the fd buffer size to 0.</P>
+<P>Keith Dart for making toc.py raise exceptions instead of sys.exit()ing.</P>
+<P>To Carlos Eberhardt for suggesting the <I>maxsplits</I> method of
+parsing messages--an improvement on my hack!</P>
+<P>Jim Gruin, for the autoresponse patch, and input on Jython compatibility.</P>
+<P>Thanks to Bob Pruett for digging in and finding a few bugs in early 
+versions.</P>
+<P>Thanks to Matthew King for the bug report about misformatted buddy lists
+on the CHAT functions.</P>
+<P><A HREF="mailto:dylant@ucla.edu">Dylan Thomas</A>, for helping out with debugging
+and coding a few test bots.  Check out 'PostgresQuickRef' sometime to see
+one of his.</P>
+&nbsp;<BR>
+</TD></TR>
+<TR><TD BGCOLOR="#434D7D" HEIGHT=2 COLSPAN=2><IMG BORDER=0 SRC="http://static.jamwt.com/jamwt/spacers/4h.gif"></TD></TR>
+</TABLE>
+<CENTER><FONT SIZE=2>&nbsp;<BR><I>&copy; 2002 - jamwt.com</I></FONT></CENTER>
+</BODY></HTML>
+
